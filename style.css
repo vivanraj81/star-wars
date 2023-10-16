@@ -28,17 +28,35 @@
     justify-content: center;
 }
 
-.mid-container{
+.Score{
     width: 25%;
     height: 200px;
     border: 1px solid rgb(181, 181, 181);
     box-shadow: 5px 5px 5px;
     text-align: center;
 }
-.mid-container h1{
+.Score h1{
  padding-top: 20px;
  font-size: 50px;
 }
 .all-container{
     display: flex;
 }
+
+@media (max-width:1260px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1,30%);
+    }
+    .container   img{
+        max-width: 80%;
+    }
+
+    .Score{
+        width: 200px;
+        text-align: right;
+        margin-left: 50px;
+      
+    }
+
+  }
